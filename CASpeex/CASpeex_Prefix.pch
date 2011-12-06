@@ -1,0 +1,5 @@
+//
+// Prefix header for all source files of the 'CASpeex' target in the 'CASpeex' project.
+//
+
+#include <Carbon/Carbon.h>

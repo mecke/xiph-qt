@@ -1,0 +1,25 @@
+Libraries
+=========
+
+Source code of the external libraries should be placed in this
+directory, in the corresponding subfolders: ogg, speex, theora,
+vorbis, flac (in an SVN checkout all libraries except flac will
+be pulled automatically).
+
+
+FLAC
+====
+
+To checkout FLAC use:
+
+    > cvs -d:pserver:anonymous@flac.cvs.sourceforge.net:/cvsroot/flac login
+    > cvs -z3 -d:pserver:anonymous@flac.cvs.sourceforge.net:/cvsroot/flac co -P flac
+
+
+Versions
+========
+
+For the stable build some libs should be pinned to specific versions:
+ * speex: revision 15126 (release 1.2rc1)
+ * theora: revision 15490 (release 1.0)
+ * flac: tag FLAC_RELEASE_1_2_1__2007_09_17 (release 1.2.1)

@@ -1,0 +1,75 @@
+=== release 0.1.9 ===
+
+2009-06-14  Arek Korbik  <arkadini@gmail.com>
+
+	* README:
+	* external-libs/README:
+	Update READMEs.
+
+2009-06-09  Arek Korbik  <arkadini@gmail.com>
+
+	* Theora/src/TheoraDecoder.c:
+	Properly resize the packet buffer when necessary - fixes playback
+	of HD content (or anything containing compressed Theora frames
+	bigger than 64kB).
+
+	* OggImport/src/stream_theora.c:
+	Tune the segmentation/duration hack values to handle HD content
+	better.
+
+2009-05-24  Arek Korbik  <arkadini@gmail.com>
+
+	* OggExport/src/OggExport.c:
+	* OggExport/src/OggExportDispatch.h:
+	Add (delegated) support for NewGetDataAndPropertiesProcs - makes
+	OggExport component iMovie'08 "compatible".
+
+2008-06-17  Arek Korbik  <arkadini@gmail.com>
+
+	* OggImport/src/stream_theora.c: Don't feed ogg pages when not going
+	to extract packets! Fixes #1379.
+
+2008-05-11  Arek Korbik  <arkadini@gmail.com>
+
+	* Theora/src/TheoraDecoder.c: Rename ystride -> stride in theora
+	structures.
+
+	* build-macosx/XiphQT.xcodeproj/project.pbxproj:
+	* build-macosx/flac-support/FLAC.xcodeproj/project.pbxproj:
+	Update Xcode project files - make it build again.
+
+=== release 0.1.8 ===
+
+2007-09-02  Arek Korbik  <arkadini@gmail.com>
+
+	* OggImport/src/OggImport.c:
+	* OggImport/src/importer_types.h:
+	Completely avoid idling for small files; keep track of the actual
+	duration of sample references inserted into the movie, for stats.
+
+2007-09-01  Arek Korbik  <arkadini@gmail.com>
+
+	* OggImport/src/OggImport.r:
+	Add the new proposed file extensions and MIME types (from
+	http://wiki.xiph.org/index.php/MIME_Types_and_File_Extensions) to
+	the OggImport component.
+
+2007-08-26  Arek Korbik  <arkadini@gmail.com>
+
+	patch by: mobodo at metakine dot com
+
+	* OggExport/src/stream_video.c:
+	Make OggExport use default/pre-configured settings when source
+	video component doesn't specify any; don't treat paramErr as error
+	while configuring video streams.
+
+2007-08-26  Arek Korbik  <arkadini@gmail.com>
+
+	* OggImport/src/OggImport.c:
+	* OggImport/src/importer_types.h:
+	* OggImport/src/stream_theora.c:
+	Improve idle loading of files with video - uses slightly more
+	memory but all avoidable stalling is being avoided.  Fixes #1151.
+
+	* ChangeLog:
+	Add the ChangeLog file.

@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		736FE585090DAFD800BC8DCC /* Ogg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 736FE584090DAFD800BC8DCC /* Ogg.framework */; };
+		737447C009112E05006D2F02 /* wrap_ogg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 737447BE09112E05006D2F02 /* wrap_ogg.cpp */; };
+		73814BBB0908014700C478FC /* Speex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73814BBA0908014700C478FC /* Speex.framework */; };
+		73814BE30908018800C478FC /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73814BE20908018800C478FC /* AudioUnit.framework */; };
+		73814BF10908027600C478FC /* CASpeexDecoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 73814BE70908027600C478FC /* CASpeexDecoder.cpp */; };
+		73814BF20908027600C478FC /* speex_entrypoints.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 73814BEB0908027600C478FC /* speex_entrypoints.cpp */; };
+		73814BF30908027600C478FC /* XCACodec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 73814BED0908027600C478FC /* XCACodec.cpp */; };
+		73814C180908039E00C478FC /* ACBaseCodec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 73814C000908039E00C478FC /* ACBaseCodec.cpp */; };
+		73814C190908039E00C478FC /* ACCodec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 73814C020908039E00C478FC /* ACCodec.cpp */; };
+		73814C1A0908039E00C478FC /* GetCodecBundle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 73814C080908039E00C478FC /* GetCodecBundle.cpp */; };
+		73814C1B0908039E00C478FC /* AudioCodecComponentGlue.c in Sources */ = {isa = PBXBuildFile; fileRef = 73814C0A0908039E00C478FC /* AudioCodecComponentGlue.c */; };
+		73814C1C0908039E00C478FC /* CABundleLocker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 73814C100908039E00C478FC /* CABundleLocker.cpp */; };
+		73814C1D0908039E00C478FC /* CADebugMacros.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 73814C130908039E00C478FC /* CADebugMacros.cpp */; };
+		73814C1E0908039E00C478FC /* CAStreamBasicDescription.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 73814C160908039E00C478FC /* CAStreamBasicDescription.cpp */; };
+		73814C25090803C600C478FC /* ringbuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 73814C22090803C600C478FC /* ringbuffer.cpp */; };
+		73814C300908060E00C478FC /* PkgInfo in CopyFiles */ = {isa = PBXBuildFile; fileRef = 73814BF70908034600C478FC /* PkgInfo */; };
+		7398ABEE090A7F2F0003F1A2 /* CASpeexDecoderPublic.r in Rez */ = {isa = PBXBuildFile; fileRef = 73814BEA0908027600C478FC /* CASpeexDecoderPublic.r */; };
+		73E8B293090D4E6E00686EE5 /* CAOggSpeexDecoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 73E8B291090D4E6E00686EE5 /* CAOggSpeexDecoder.cpp */; };
+		8D01CCCA0486CAD60068D4B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+		8D01CCCE0486CAD60068D4B7 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		73814C2D090805DF00C478FC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents;
+			dstSubfolderSpec = 1;
+			files = (
+				73814C300908060E00C478FC /* PkgInfo in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		32BAE0B30371A71500C91783 /* CASpeex_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CASpeex_Prefix.pch; sourceTree = "<group>"; };
+		730DC2AE09086D3B00B7BB6A /* debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = debug.h; sourceTree = "<group>"; };
+		7348BD670944D3AF00AC363C /* XCAResources.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; name = XCAResources.r; path = ../resources/XCAResources.r; sourceTree = SOURCE_ROOT; };
+		7348BD690944D3C100AC363C /* config.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = config.h; path = ../common/config.h; sourceTree = SOURCE_ROOT; };
+		736FE584090DAFD800BC8DCC /* Ogg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ogg.framework; path = /Library/Frameworks/Ogg.framework; sourceTree = "<absolute>"; };
+		737447470911261B006D2F02 /* fccs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fccs.h; path = ../common/fccs.h; sourceTree = SOURCE_ROOT; };
+		737447BD09112E05006D2F02 /* wrap_ogg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wrap_ogg.h; sourceTree = "<group>"; };
+		737447BE09112E05006D2F02 /* wrap_ogg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wrap_ogg.cpp; sourceTree = "<group>"; };
+		73814BBA0908014700C478FC /* Speex.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Speex.framework; path = /Library/Frameworks/Speex.framework; sourceTree = "<absolute>"; };
+		73814BE20908018800C478FC /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = /System/Library/Frameworks/AudioUnit.framework; sourceTree = "<absolute>"; };
+		73814BE60908027600C478FC /* CASpeexCodec.exp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.exports; name = CASpeexCodec.exp; path = src/CASpeexCodec.exp; sourceTree = "<group>"; };
+		73814BE70908027600C478FC /* CASpeexDecoder.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = CASpeexDecoder.cpp; path = src/CASpeexDecoder.cpp; sourceTree = "<group>"; };
+		73814BE80908027600C478FC /* CASpeexDecoder.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = CASpeexDecoder.h; path = src/CASpeexDecoder.h; sourceTree = "<group>"; };
+		73814BEA0908027600C478FC /* CASpeexDecoderPublic.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; name = CASpeexDecoderPublic.r; path = src/CASpeexDecoderPublic.r; sourceTree = "<group>"; };
+		73814BEB0908027600C478FC /* speex_entrypoints.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = speex_entrypoints.cpp; path = src/speex_entrypoints.cpp; sourceTree = "<group>"; };
+		73814BEC0908027600C478FC /* speex_versions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = speex_versions.h; path = src/speex_versions.h; sourceTree = "<group>"; };
+		73814BED0908027600C478FC /* XCACodec.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = XCACodec.cpp; path = ../common/XCACodec.cpp; sourceTree = "<group>"; };
+		73814BEE0908027600C478FC /* XCACodec.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = XCACodec.h; path = ../common/XCACodec.h; sourceTree = "<group>"; };
+		73814BF4090802F600C478FC /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = icon.icns; path = ../resources/icon.icns; sourceTree = SOURCE_ROOT; };
+		73814BF5090802F600C478FC /* icon.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; name = icon.r; path = ../resources/icon.r; sourceTree = SOURCE_ROOT; };
+		73814BF70908034600C478FC /* PkgInfo */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = PkgInfo; sourceTree = "<group>"; };
+		73814C000908039E00C478FC /* ACBaseCodec.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = ACBaseCodec.cpp; sourceTree = "<group>"; };
+		73814C010908039E00C478FC /* ACBaseCodec.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ACBaseCodec.h; sourceTree = "<group>"; };
+		73814C020908039E00C478FC /* ACCodec.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = ACCodec.cpp; sourceTree = "<group>"; };
+		73814C030908039E00C478FC /* ACCodec.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ACCodec.h; sourceTree = "<group>"; };
+		73814C040908039E00C478FC /* ACCodecDispatch.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ACCodecDispatch.h; sourceTree = "<group>"; };
+		73814C050908039E00C478FC /* ACCodecDispatchTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ACCodecDispatchTypes.h; sourceTree = "<group>"; };
+		73814C070908039E00C478FC /* ACConditionalMacros.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ACConditionalMacros.h; sourceTree = "<group>"; };
+		73814C080908039E00C478FC /* GetCodecBundle.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = GetCodecBundle.cpp; sourceTree = "<group>"; };
+		73814C090908039E00C478FC /* GetCodecBundle.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = GetCodecBundle.h; sourceTree = "<group>"; };
+		73814C0A0908039E00C478FC /* AudioCodecComponentGlue.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = AudioCodecComponentGlue.c; sourceTree = "<group>"; };
+		73814C100908039E00C478FC /* CABundleLocker.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = CABundleLocker.cpp; sourceTree = "<group>"; };
+		73814C110908039E00C478FC /* CABundleLocker.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CABundleLocker.h; sourceTree = "<group>"; };
+		73814C120908039E00C478FC /* CAConditionalMacros.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CAConditionalMacros.h; sourceTree = "<group>"; };
+		73814C130908039E00C478FC /* CADebugMacros.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = CADebugMacros.cpp; sourceTree = "<group>"; };
+		73814C140908039E00C478FC /* CADebugMacros.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CADebugMacros.h; sourceTree = "<group>"; };
+		73814C150908039E00C478FC /* CAMath.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CAMath.h; sourceTree = "<group>"; };
+		73814C160908039E00C478FC /* CAStreamBasicDescription.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = CAStreamBasicDescription.cpp; sourceTree = "<group>"; };
+		73814C170908039E00C478FC /* CAStreamBasicDescription.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CAStreamBasicDescription.h; sourceTree = "<group>"; };
+		73814C22090803C600C478FC /* ringbuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = ringbuffer.cpp; sourceTree = "<group>"; };
+		73814C23090803C600C478FC /* ringbuffer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ringbuffer.h; sourceTree = "<group>"; };
+		73E8B252090D3C6B00686EE5 /* data_types.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = data_types.h; path = ../common/data_types.h; sourceTree = SOURCE_ROOT; };
+		73E8B290090D4E6E00686EE5 /* CAOggSpeexDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CAOggSpeexDecoder.h; path = src/CAOggSpeexDecoder.h; sourceTree = "<group>"; };
+		73E8B291090D4E6E00686EE5 /* CAOggSpeexDecoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CAOggSpeexDecoder.cpp; path = src/CAOggSpeexDecoder.cpp; sourceTree = "<group>"; };
+		8D01CCD10486CAD60068D4B7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D01CCD20486CAD60068D4B7 /* CASpeex.component */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CASpeex.component; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D01CCCD0486CAD60068D4B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D01CCCE0486CAD60068D4B7 /* Carbon.framework in Frameworks */,
+				73814BBB0908014700C478FC /* Speex.framework in Frameworks */,
+				73814BE30908018800C478FC /* AudioUnit.framework in Frameworks */,
+				736FE585090DAFD800BC8DCC /* Ogg.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* CASpeex */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77ADFE841716C02AAC07 /* Source */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				73814BFA0908037D00C478FC /* External Source */,
+				089C1671FE841209C02AAC07 /* External Frameworks and Libraries */,
+				19C28FB4FE9D528D11CA2CBB /* Products */,
+			);
+			name = CASpeex;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				736FE584090DAFD800BC8DCC /* Ogg.framework */,
+				73814BBA0908014700C478FC /* Speex.framework */,
+				73814BE20908018800C478FC /* AudioUnit.framework */,
+				08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7348BD670944D3AF00AC363C /* XCAResources.r */,
+				73814BF70908034600C478FC /* PkgInfo */,
+				73814BF4090802F600C478FC /* icon.icns */,
+				73814BF5090802F600C478FC /* icon.r */,
+				73814BEA0908027600C478FC /* CASpeexDecoderPublic.r */,
+				8D01CCD10486CAD60068D4B7 /* Info.plist */,
+				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77ADFE841716C02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				7348BD690944D3C100AC363C /* config.h */,
+				73E8B252090D3C6B00686EE5 /* data_types.h */,
+				73814BE60908027600C478FC /* CASpeexCodec.exp */,
+				73814BE70908027600C478FC /* CASpeexDecoder.cpp */,
+				73814BE80908027600C478FC /* CASpeexDecoder.h */,
+				73814BEB0908027600C478FC /* speex_entrypoints.cpp */,
+				73814BEC0908027600C478FC /* speex_versions.h */,
+				73814BED0908027600C478FC /* XCACodec.cpp */,
+				73814BEE0908027600C478FC /* XCACodec.h */,
+				32BAE0B30371A71500C91783 /* CASpeex_Prefix.pch */,
+				73E8B290090D4E6E00686EE5 /* CAOggSpeexDecoder.h */,
+				73E8B291090D4E6E00686EE5 /* CAOggSpeexDecoder.cpp */,
+				737447470911261B006D2F02 /* fccs.h */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		19C28FB4FE9D528D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D01CCD20486CAD60068D4B7 /* CASpeex.component */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		73814BFA0908037D00C478FC /* External Source */ = {
+			isa = PBXGroup;
+			children = (
+				73814BFC0908039E00C478FC /* AppleSDK */,
+				73814C1F090803C600C478FC /* utils */,
+			);
+			name = "External Source";
+			sourceTree = "<group>";
+		};
+		73814BFC0908039E00C478FC /* AppleSDK */ = {
+			isa = PBXGroup;
+			children = (
+				73814BFD0908039E00C478FC /* CoreAudio */,
+			);
+			name = AppleSDK;
+			path = ../AppleSDK;
+			sourceTree = SOURCE_ROOT;
+		};
+		73814BFD0908039E00C478FC /* CoreAudio */ = {
+			isa = PBXGroup;
+			children = (
+				73814BFE0908039E00C478FC /* AudioCodecs */,
+				73814C0B0908039E00C478FC /* AudioUnits */,
+				73814C0F0908039E00C478FC /* PublicUtility */,
+			);
+			path = CoreAudio;
+			sourceTree = "<group>";
+		};
+		73814BFE0908039E00C478FC /* AudioCodecs */ = {
+			isa = PBXGroup;
+			children = (
+				73814BFF0908039E00C478FC /* ACPublic */,
+				73814C0A0908039E00C478FC /* AudioCodecComponentGlue.c */,
+			);
+			path = AudioCodecs;
+			sourceTree = "<group>";
+		};
+		73814BFF0908039E00C478FC /* ACPublic */ = {
+			isa = PBXGroup;
+			children = (
+				73814C000908039E00C478FC /* ACBaseCodec.cpp */,
+				73814C010908039E00C478FC /* ACBaseCodec.h */,
+				73814C020908039E00C478FC /* ACCodec.cpp */,
+				73814C030908039E00C478FC /* ACCodec.h */,
+				73814C040908039E00C478FC /* ACCodecDispatch.h */,
+				73814C050908039E00C478FC /* ACCodecDispatchTypes.h */,
+				73814C070908039E00C478FC /* ACConditionalMacros.h */,
+				73814C080908039E00C478FC /* GetCodecBundle.cpp */,
+				73814C090908039E00C478FC /* GetCodecBundle.h */,
+			);
+			path = ACPublic;
+			sourceTree = "<group>";
+		};
+		73814C0B0908039E00C478FC /* AudioUnits */ = {
+			isa = PBXGroup;
+			children = (
+				73814C0C0908039E00C478FC /* AUPublic */,
+			);
+			path = AudioUnits;
+			sourceTree = "<group>";
+		};
+		73814C0C0908039E00C478FC /* AUPublic */ = {
+			isa = PBXGroup;
+			children = (
+				73814C0D0908039E00C478FC /* AUBase */,
+			);
+			path = AUPublic;
+			sourceTree = "<group>";
+		};
+		73814C0D0908039E00C478FC /* AUBase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AUBase;
+			sourceTree = "<group>";
+		};
+		73814C0F0908039E00C478FC /* PublicUtility */ = {
+			isa = PBXGroup;
+			children = (
+				73814C100908039E00C478FC /* CABundleLocker.cpp */,
+				73814C110908039E00C478FC /* CABundleLocker.h */,
+				73814C120908039E00C478FC /* CAConditionalMacros.h */,
+				73814C130908039E00C478FC /* CADebugMacros.cpp */,
+				73814C140908039E00C478FC /* CADebugMacros.h */,
+				73814C150908039E00C478FC /* CAMath.h */,
+				73814C160908039E00C478FC /* CAStreamBasicDescription.cpp */,
+				73814C170908039E00C478FC /* CAStreamBasicDescription.h */,
+			);
+			path = PublicUtility;
+			sourceTree = "<group>";
+		};
+		73814C1F090803C600C478FC /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				737447BD09112E05006D2F02 /* wrap_ogg.h */,
+				737447BE09112E05006D2F02 /* wrap_ogg.cpp */,
+				73814C22090803C600C478FC /* ringbuffer.cpp */,
+				73814C23090803C600C478FC /* ringbuffer.h */,
+				730DC2AE09086D3B00B7BB6A /* debug.h */,
+			);
+			name = utils;
+			path = ../utils;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D01CCC60486CAD60068D4B7 /* CASpeex */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73814AA00907F9EC00C478FC /* Build configuration list for PBXNativeTarget "CASpeex" */;
+			buildPhases = (
+				8D01CCC90486CAD60068D4B7 /* Resources */,
+				8D01CCCB0486CAD60068D4B7 /* Sources */,
+				8D01CCCD0486CAD60068D4B7 /* Frameworks */,
+				73814C260908053200C478FC /* Rez */,
+				73814C2D090805DF00C478FC /* CopyFiles */,
+				73814C310908064E00C478FC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CASpeex;
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = CASpeex;
+			productReference = 8D01CCD20486CAD60068D4B7 /* CASpeex.component */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 73814AA40907F9EC00C478FC /* Build configuration list for PBXProject "CASpeex" */;
+			hasScannedForEncodings = 1;
+			mainGroup = 089C166AFE841209C02AAC07 /* CASpeex */;
+			projectDirPath = "";
+			targets = (
+				8D01CCC60486CAD60068D4B7 /* CASpeex */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D01CCC90486CAD60068D4B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D01CCCA0486CAD60068D4B7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		73814C260908053200C478FC /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7398ABEE090A7F2F0003F1A2 /* CASpeexDecoderPublic.r in Rez */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		73814C310908064E00C478FC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				../resources/icon.r,
+				../resources/icon.icns,
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd ../resources\n${SYSTEM_DEVELOPER_TOOLS}/Rez -o \"${TARGET_BUILD_DIR}/${FULL_PRODUCT_NAME}\"/$'Icon\\x0D' icon.r\n${SYSTEM_DEVELOPER_TOOLS}/SetFile -a CE \"${TARGET_BUILD_DIR}/${FULL_PRODUCT_NAME}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D01CCCB0486CAD60068D4B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73814BF10908027600C478FC /* CASpeexDecoder.cpp in Sources */,
+				73814BF20908027600C478FC /* speex_entrypoints.cpp in Sources */,
+				73814BF30908027600C478FC /* XCACodec.cpp in Sources */,
+				73814C180908039E00C478FC /* ACBaseCodec.cpp in Sources */,
+				73814C190908039E00C478FC /* ACCodec.cpp in Sources */,
+				73814C1A0908039E00C478FC /* GetCodecBundle.cpp in Sources */,
+				73814C1B0908039E00C478FC /* AudioCodecComponentGlue.c in Sources */,
+				73814C1C0908039E00C478FC /* CABundleLocker.cpp in Sources */,
+				73814C1D0908039E00C478FC /* CADebugMacros.cpp in Sources */,
+				73814C1E0908039E00C478FC /* CAStreamBasicDescription.cpp in Sources */,
+				73814C25090803C600C478FC /* ringbuffer.cpp in Sources */,
+				73E8B293090D4E6E00686EE5 /* CAOggSpeexDecoder.cpp in Sources */,
+				737447C009112E05006D2F02 /* wrap_ogg.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C167DFE841241C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C167EFE841241C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		73814AA10907F9EC00C478FC /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXPORTED_SYMBOLS_FILE = src/CASpeexCodec.exp;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS)",
+					"$(HOME)/Library/Frameworks",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CASpeex_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = __MACOSX__;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Components";
+				OTHER_CFLAGS = "-Wall";
+				PRODUCT_NAME = CASpeex;
+				WRAPPER_EXTENSION = component;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		73814AA20907F9EC00C478FC /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXPORTED_SYMBOLS_FILE = src/CASpeexCodec.exp;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS)",
+					"$(HOME)/Library/Frameworks",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CASpeex_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					__MACOSX__,
+					NDEBUG,
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Components";
+				PRODUCT_NAME = CASpeex;
+				WRAPPER_EXTENSION = component;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		73814AA50907F9EC00C478FC /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(GCC_PREPROCESSOR_DEFINITIONS)",
+					QT_IA32__VBR_BROKEN,
+				);
+				OTHER_REZFLAGS = "$(OTHER_REZFLAGS) -D TARGET_REZ_MAC_PPC=1 -D BUILD_UNIVERSAL";
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Development;
+		};
+		73814AA60907F9EC00C478FC /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(GCC_PREPROCESSOR_DEFINITIONS)",
+					QT_IA32__VBR_BROKEN,
+				);
+				OTHER_CFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-falign-loops=16",
+					"-ffast-math",
+				);
+				OTHER_REZFLAGS = "$(OTHER_REZFLAGS) -D TARGET_REZ_MAC_PPC=1 -D BUILD_UNIVERSAL";
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Deployment;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		73814AA00907F9EC00C478FC /* Build configuration list for PBXNativeTarget "CASpeex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73814AA10907F9EC00C478FC /* Development */,
+				73814AA20907F9EC00C478FC /* Deployment */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Deployment;
+		};
+		73814AA40907F9EC00C478FC /* Build configuration list for PBXProject "CASpeex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73814AA50907F9EC00C478FC /* Development */,
+				73814AA60907F9EC00C478FC /* Deployment */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Deployment;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

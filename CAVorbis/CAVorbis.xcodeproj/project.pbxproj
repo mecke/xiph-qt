@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		734252F60AECFAB8003F78A8 /* CAVorbisEncoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 734252F30AECFAB8003F78A8 /* CAVorbisEncoder.cpp */; };
+		734252F80AECFAB8003F78A8 /* CAVorbisEncoderPublic.r in Rez */ = {isa = PBXBuildFile; fileRef = 734252F50AECFAB8003F78A8 /* CAVorbisEncoderPublic.r */; };
+		737C589309125B5900700B79 /* vorbis_entrypoints.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 737C589209125B5900700B79 /* vorbis_entrypoints.cpp */; };
+		737C58A109125C7E00700B79 /* wrap_ogg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 737C589F09125C7E00700B79 /* wrap_ogg.cpp */; };
+		737C593B09125DB700700B79 /* PkgInfo in CopyFiles */ = {isa = PBXBuildFile; fileRef = 737C589809125BA000700B79 /* PkgInfo */; };
+		737C59960912617B00700B79 /* CAOggVorbisDecoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 737C59940912617B00700B79 /* CAOggVorbisDecoder.cpp */; };
+		737C9EC608F80D3D00DAC36C /* ringbuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 737C9EC508F80D3D00DAC36C /* ringbuffer.cpp */; };
+		737C9FE108F82B8B00DAC36C /* CAVorbisDecoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 737C9FE008F82B8B00DAC36C /* CAVorbisDecoder.cpp */; };
+		737CA00A08F82D0600DAC36C /* ACBaseCodec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 737C9FFF08F82D0600DAC36C /* ACBaseCodec.cpp */; };
+		737CA00B08F82D0600DAC36C /* ACCodec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 737CA00108F82D0600DAC36C /* ACCodec.cpp */; };
+		737CA01508F82D7500DAC36C /* GetCodecBundle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 737CA01308F82D7500DAC36C /* GetCodecBundle.cpp */; };
+		737CA03108F82E5F00DAC36C /* CAStreamBasicDescription.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 737CA02F08F82E5F00DAC36C /* CAStreamBasicDescription.cpp */; };
+		737CA03C08F82EB400DAC36C /* CADebugMacros.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 737CA03A08F82EB400DAC36C /* CADebugMacros.cpp */; };
+		737CA04708F82EF400DAC36C /* CABundleLocker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 737CA04508F82EF400DAC36C /* CABundleLocker.cpp */; };
+		737CA0D108F8352A00DAC36C /* AudioCodecComponentGlue.c in Sources */ = {isa = PBXBuildFile; fileRef = 737CA0D008F8352A00DAC36C /* AudioCodecComponentGlue.c */; };
+		737CA1B008F8376400DAC36C /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 737CA1AD08F8376400DAC36C /* Carbon.framework */; };
+		737CA1E008F83B2F00DAC36C /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 737CA1AC08F8376400DAC36C /* AudioUnit.framework */; };
+		737CA4D908F95A2C00DAC36C /* CAVorbisDecoderPublic.r in Rez */ = {isa = PBXBuildFile; fileRef = 737CA4B708F9588900DAC36C /* CAVorbisDecoderPublic.r */; };
+		737CA65008F9D34000DAC36C /* Ogg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 737CA64308F9D34000DAC36C /* Ogg.framework */; };
+		737CA65108F9D34000DAC36C /* Vorbis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 737CA64408F9D34000DAC36C /* Vorbis.framework */; };
+		73C298B30AEFAA7100EF9C25 /* XCACodec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 737C589B09125C2700700B79 /* XCACodec.cpp */; };
+		8D01CCCA0486CAD60068D4B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		737C593509125CFB00700B79 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents;
+			dstSubfolderSpec = 1;
+			files = (
+				737C593B09125DB700700B79 /* PkgInfo in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		32BAE0B30371A71500C91783 /* CAVorbis_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAVorbis_Prefix.pch; sourceTree = "<group>"; };
+		734252F30AECFAB8003F78A8 /* CAVorbisEncoder.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = CAVorbisEncoder.cpp; path = src/CAVorbisEncoder.cpp; sourceTree = "<group>"; };
+		734252F40AECFAB8003F78A8 /* CAVorbisEncoder.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = CAVorbisEncoder.h; path = src/CAVorbisEncoder.h; sourceTree = "<group>"; };
+		734252F50AECFAB8003F78A8 /* CAVorbisEncoderPublic.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; name = CAVorbisEncoderPublic.r; path = src/CAVorbisEncoderPublic.r; sourceTree = "<group>"; };
+		7348BD580944D32400AC363C /* XCAResources.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; name = XCAResources.r; path = ../resources/XCAResources.r; sourceTree = SOURCE_ROOT; };
+		7348BD5A0944D37900AC363C /* config.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = config.h; path = ../common/config.h; sourceTree = SOURCE_ROOT; };
+		737C589209125B5900700B79 /* vorbis_entrypoints.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = vorbis_entrypoints.cpp; path = src/vorbis_entrypoints.cpp; sourceTree = "<group>"; };
+		737C589409125B8500700B79 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = icon.icns; path = ../resources/icon.icns; sourceTree = SOURCE_ROOT; };
+		737C589509125B8500700B79 /* icon.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; name = icon.r; path = ../resources/icon.r; sourceTree = SOURCE_ROOT; };
+		737C589809125BA000700B79 /* PkgInfo */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = PkgInfo; sourceTree = "<group>"; };
+		737C589A09125BFD00700B79 /* fccs.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = fccs.h; path = ../common/fccs.h; sourceTree = SOURCE_ROOT; };
+		737C589B09125C2700700B79 /* XCACodec.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = XCACodec.cpp; path = ../common/XCACodec.cpp; sourceTree = SOURCE_ROOT; };
+		737C589C09125C2700700B79 /* XCACodec.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = XCACodec.h; path = ../common/XCACodec.h; sourceTree = SOURCE_ROOT; };
+		737C589E09125C7E00700B79 /* debug.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = debug.h; sourceTree = "<group>"; };
+		737C589F09125C7E00700B79 /* wrap_ogg.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = wrap_ogg.cpp; sourceTree = "<group>"; };
+		737C58A009125C7E00700B79 /* wrap_ogg.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = wrap_ogg.h; sourceTree = "<group>"; };
+		737C59940912617B00700B79 /* CAOggVorbisDecoder.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = CAOggVorbisDecoder.cpp; path = src/CAOggVorbisDecoder.cpp; sourceTree = "<group>"; };
+		737C59950912617B00700B79 /* CAOggVorbisDecoder.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = CAOggVorbisDecoder.h; path = src/CAOggVorbisDecoder.h; sourceTree = "<group>"; };
+		737C9EBB08F804CC00DAC36C /* vorbis_versions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vorbis_versions.h; path = src/vorbis_versions.h; sourceTree = "<group>"; };
+		737C9EC408F80D3D00DAC36C /* ringbuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ringbuffer.h; sourceTree = "<group>"; };
+		737C9EC508F80D3D00DAC36C /* ringbuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ringbuffer.cpp; sourceTree = "<group>"; };
+		737C9FDF08F82B8B00DAC36C /* CAVorbisDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CAVorbisDecoder.h; path = src/CAVorbisDecoder.h; sourceTree = "<group>"; };
+		737C9FE008F82B8B00DAC36C /* CAVorbisDecoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CAVorbisDecoder.cpp; path = src/CAVorbisDecoder.cpp; sourceTree = "<group>"; };
+		737C9FFF08F82D0600DAC36C /* ACBaseCodec.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = ACBaseCodec.cpp; sourceTree = "<group>"; };
+		737CA00008F82D0600DAC36C /* ACBaseCodec.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ACBaseCodec.h; sourceTree = "<group>"; };
+		737CA00108F82D0600DAC36C /* ACCodec.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = ACCodec.cpp; sourceTree = "<group>"; };
+		737CA00208F82D0600DAC36C /* ACCodec.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ACCodec.h; sourceTree = "<group>"; };
+		737CA00308F82D0600DAC36C /* ACCodecDispatch.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ACCodecDispatch.h; sourceTree = "<group>"; };
+		737CA00408F82D0600DAC36C /* ACCodecDispatchTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ACCodecDispatchTypes.h; sourceTree = "<group>"; };
+		737CA00608F82D0600DAC36C /* ACConditionalMacros.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ACConditionalMacros.h; sourceTree = "<group>"; };
+		737CA00908F82D0600DAC36C /* CAConditionalMacros.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CAConditionalMacros.h; sourceTree = "<group>"; };
+		737CA01308F82D7500DAC36C /* GetCodecBundle.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = GetCodecBundle.cpp; sourceTree = "<group>"; };
+		737CA01408F82D7500DAC36C /* GetCodecBundle.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = GetCodecBundle.h; sourceTree = "<group>"; };
+		737CA02F08F82E5F00DAC36C /* CAStreamBasicDescription.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = CAStreamBasicDescription.cpp; sourceTree = "<group>"; };
+		737CA03008F82E5F00DAC36C /* CAStreamBasicDescription.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CAStreamBasicDescription.h; sourceTree = "<group>"; };
+		737CA03A08F82EB400DAC36C /* CADebugMacros.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = CADebugMacros.cpp; sourceTree = "<group>"; };
+		737CA03B08F82EB400DAC36C /* CADebugMacros.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CADebugMacros.h; sourceTree = "<group>"; };
+		737CA04508F82EF400DAC36C /* CABundleLocker.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = CABundleLocker.cpp; sourceTree = "<group>"; };
+		737CA04608F82EF400DAC36C /* CABundleLocker.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CABundleLocker.h; sourceTree = "<group>"; };
+		737CA0D008F8352A00DAC36C /* AudioCodecComponentGlue.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = AudioCodecComponentGlue.c; sourceTree = "<group>"; };
+		737CA0F408F8361100DAC36C /* CAMath.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CAMath.h; sourceTree = "<group>"; };
+		737CA1AC08F8376400DAC36C /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = /System/Library/Frameworks/AudioUnit.framework; sourceTree = "<absolute>"; };
+		737CA1AD08F8376400DAC36C /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		737CA4B408F9587200DAC36C /* CAVorbisCodec.exp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.exports; name = CAVorbisCodec.exp; path = src/CAVorbisCodec.exp; sourceTree = "<group>"; };
+		737CA4B708F9588900DAC36C /* CAVorbisDecoderPublic.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; name = CAVorbisDecoderPublic.r; path = src/CAVorbisDecoderPublic.r; sourceTree = "<group>"; };
+		737CA64308F9D34000DAC36C /* Ogg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ogg.framework; path = /Library/Frameworks/Ogg.framework; sourceTree = "<absolute>"; };
+		737CA64408F9D34000DAC36C /* Vorbis.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Vorbis.framework; path = /Library/Frameworks/Vorbis.framework; sourceTree = "<absolute>"; };
+		73E8B11A090BCD8200686EE5 /* data_types.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = data_types.h; path = ../common/data_types.h; sourceTree = SOURCE_ROOT; };
+		8D01CCD10486CAD60068D4B7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D01CCD20486CAD60068D4B7 /* CAVorbis.component */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CAVorbis.component; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D01CCCD0486CAD60068D4B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				737CA1B008F8376400DAC36C /* Carbon.framework in Frameworks */,
+				737CA1E008F83B2F00DAC36C /* AudioUnit.framework in Frameworks */,
+				737CA65008F9D34000DAC36C /* Ogg.framework in Frameworks */,
+				737CA65108F9D34000DAC36C /* Vorbis.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* CAVorbis */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77ADFE841716C02AAC07 /* Source */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				737C9EC108F80CA600DAC36C /* External Source */,
+				089C1671FE841209C02AAC07 /* External Frameworks and Libraries */,
+				19C28FB4FE9D528D11CA2CBB /* Products */,
+			);
+			name = CAVorbis;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				737CA64308F9D34000DAC36C /* Ogg.framework */,
+				737CA64408F9D34000DAC36C /* Vorbis.framework */,
+				737CA1AC08F8376400DAC36C /* AudioUnit.framework */,
+				737CA1AD08F8376400DAC36C /* Carbon.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7348BD580944D32400AC363C /* XCAResources.r */,
+				737C589809125BA000700B79 /* PkgInfo */,
+				737C589409125B8500700B79 /* icon.icns */,
+				737C589509125B8500700B79 /* icon.r */,
+				737CA4B708F9588900DAC36C /* CAVorbisDecoderPublic.r */,
+				734252F50AECFAB8003F78A8 /* CAVorbisEncoderPublic.r */,
+				8D01CCD10486CAD60068D4B7 /* Info.plist */,
+				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77ADFE841716C02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				734252F30AECFAB8003F78A8 /* CAVorbisEncoder.cpp */,
+				734252F40AECFAB8003F78A8 /* CAVorbisEncoder.h */,
+				7348BD5A0944D37900AC363C /* config.h */,
+				737C59940912617B00700B79 /* CAOggVorbisDecoder.cpp */,
+				737C59950912617B00700B79 /* CAOggVorbisDecoder.h */,
+				737C589B09125C2700700B79 /* XCACodec.cpp */,
+				737C589C09125C2700700B79 /* XCACodec.h */,
+				737C589A09125BFD00700B79 /* fccs.h */,
+				737C589209125B5900700B79 /* vorbis_entrypoints.cpp */,
+				73E8B11A090BCD8200686EE5 /* data_types.h */,
+				737CA4B408F9587200DAC36C /* CAVorbisCodec.exp */,
+				32BAE0B30371A71500C91783 /* CAVorbis_Prefix.pch */,
+				737C9EBB08F804CC00DAC36C /* vorbis_versions.h */,
+				737C9FDF08F82B8B00DAC36C /* CAVorbisDecoder.h */,
+				737C9FE008F82B8B00DAC36C /* CAVorbisDecoder.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		19C28FB4FE9D528D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D01CCD20486CAD60068D4B7 /* CAVorbis.component */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		737C9EC108F80CA600DAC36C /* External Source */ = {
+			isa = PBXGroup;
+			children = (
+				737C9FFB08F82D0600DAC36C /* AppleSDK */,
+				737C9EC308F80CE600DAC36C /* utils */,
+			);
+			name = "External Source";
+			sourceTree = "<group>";
+		};
+		737C9EC308F80CE600DAC36C /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				737C589E09125C7E00700B79 /* debug.h */,
+				737C589F09125C7E00700B79 /* wrap_ogg.cpp */,
+				737C58A009125C7E00700B79 /* wrap_ogg.h */,
+				737C9EC408F80D3D00DAC36C /* ringbuffer.h */,
+				737C9EC508F80D3D00DAC36C /* ringbuffer.cpp */,
+			);
+			name = utils;
+			path = ../utils;
+			sourceTree = SOURCE_ROOT;
+		};
+		737C9FFB08F82D0600DAC36C /* AppleSDK */ = {
+			isa = PBXGroup;
+			children = (
+				737C9FFC08F82D0600DAC36C /* CoreAudio */,
+			);
+			name = AppleSDK;
+			path = ../AppleSDK;
+			sourceTree = SOURCE_ROOT;
+		};
+		737C9FFC08F82D0600DAC36C /* CoreAudio */ = {
+			isa = PBXGroup;
+			children = (
+				737CA4F608F95BCE00DAC36C /* AudioUnits */,
+				737C9FFD08F82D0600DAC36C /* AudioCodecs */,
+				737CA00808F82D0600DAC36C /* PublicUtility */,
+			);
+			path = CoreAudio;
+			sourceTree = "<group>";
+		};
+		737C9FFD08F82D0600DAC36C /* AudioCodecs */ = {
+			isa = PBXGroup;
+			children = (
+				737CA0D008F8352A00DAC36C /* AudioCodecComponentGlue.c */,
+				737C9FFE08F82D0600DAC36C /* ACPublic */,
+			);
+			path = AudioCodecs;
+			sourceTree = "<group>";
+		};
+		737C9FFE08F82D0600DAC36C /* ACPublic */ = {
+			isa = PBXGroup;
+			children = (
+				737C9FFF08F82D0600DAC36C /* ACBaseCodec.cpp */,
+				737CA00008F82D0600DAC36C /* ACBaseCodec.h */,
+				737CA00108F82D0600DAC36C /* ACCodec.cpp */,
+				737CA00208F82D0600DAC36C /* ACCodec.h */,
+				737CA00308F82D0600DAC36C /* ACCodecDispatch.h */,
+				737CA00408F82D0600DAC36C /* ACCodecDispatchTypes.h */,
+				737CA00608F82D0600DAC36C /* ACConditionalMacros.h */,
+				737CA01308F82D7500DAC36C /* GetCodecBundle.cpp */,
+				737CA01408F82D7500DAC36C /* GetCodecBundle.h */,
+			);
+			path = ACPublic;
+			sourceTree = "<group>";
+		};
+		737CA00808F82D0600DAC36C /* PublicUtility */ = {
+			isa = PBXGroup;
+			children = (
+				737CA0F408F8361100DAC36C /* CAMath.h */,
+				737CA04508F82EF400DAC36C /* CABundleLocker.cpp */,
+				737CA04608F82EF400DAC36C /* CABundleLocker.h */,
+				737CA03A08F82EB400DAC36C /* CADebugMacros.cpp */,
+				737CA03B08F82EB400DAC36C /* CADebugMacros.h */,
+				737CA02F08F82E5F00DAC36C /* CAStreamBasicDescription.cpp */,
+				737CA03008F82E5F00DAC36C /* CAStreamBasicDescription.h */,
+				737CA00908F82D0600DAC36C /* CAConditionalMacros.h */,
+			);
+			path = PublicUtility;
+			sourceTree = "<group>";
+		};
+		737CA4F608F95BCE00DAC36C /* AudioUnits */ = {
+			isa = PBXGroup;
+			children = (
+				737CA4F708F95BCE00DAC36C /* AUPublic */,
+			);
+			path = AudioUnits;
+			sourceTree = "<group>";
+		};
+		737CA4F708F95BCE00DAC36C /* AUPublic */ = {
+			isa = PBXGroup;
+			children = (
+				737CA4F808F95BCE00DAC36C /* AUBase */,
+			);
+			path = AUPublic;
+			sourceTree = "<group>";
+		};
+		737CA4F808F95BCE00DAC36C /* AUBase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AUBase;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D01CCC60486CAD60068D4B7 /* CAVorbis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 737C9E9808F7FE4D00DAC36C /* Build configuration list for PBXNativeTarget "CAVorbis" */;
+			buildPhases = (
+				8D01CCC90486CAD60068D4B7 /* Resources */,
+				8D01CCCB0486CAD60068D4B7 /* Sources */,
+				8D01CCCD0486CAD60068D4B7 /* Frameworks */,
+				737CA4B808F9589D00DAC36C /* Rez */,
+				737C593509125CFB00700B79 /* CopyFiles */,
+				737C593709125D1B00700B79 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CAVorbis;
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = CAVorbis;
+			productReference = 8D01CCD20486CAD60068D4B7 /* CAVorbis.component */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 737C9E9C08F7FE4D00DAC36C /* Build configuration list for PBXProject "CAVorbis" */;
+			hasScannedForEncodings = 1;
+			mainGroup = 089C166AFE841209C02AAC07 /* CAVorbis */;
+			projectDirPath = "";
+			targets = (
+				8D01CCC60486CAD60068D4B7 /* CAVorbis */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D01CCC90486CAD60068D4B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D01CCCA0486CAD60068D4B7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		737CA4B808F9589D00DAC36C /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				737CA4D908F95A2C00DAC36C /* CAVorbisDecoderPublic.r in Rez */,
+				734252F80AECFAB8003F78A8 /* CAVorbisEncoderPublic.r in Rez */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		737C593709125D1B00700B79 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"../resources/icon.r\n../resources/icon.r",
+				../resources/icon.icns,
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd ../resources\n${SYSTEM_DEVELOPER_TOOLS}/Rez -o \"${TARGET_BUILD_DIR}/${FULL_PRODUCT_NAME}\"/$'Icon\\x0D' icon.r\n${SYSTEM_DEVELOPER_TOOLS}/SetFile -a CE \"${TARGET_BUILD_DIR}/${FULL_PRODUCT_NAME}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D01CCCB0486CAD60068D4B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				737C9EC608F80D3D00DAC36C /* ringbuffer.cpp in Sources */,
+				737C9FE108F82B8B00DAC36C /* CAVorbisDecoder.cpp in Sources */,
+				737CA00A08F82D0600DAC36C /* ACBaseCodec.cpp in Sources */,
+				737CA00B08F82D0600DAC36C /* ACCodec.cpp in Sources */,
+				737CA01508F82D7500DAC36C /* GetCodecBundle.cpp in Sources */,
+				737CA03108F82E5F00DAC36C /* CAStreamBasicDescription.cpp in Sources */,
+				737CA03C08F82EB400DAC36C /* CADebugMacros.cpp in Sources */,
+				737CA04708F82EF400DAC36C /* CABundleLocker.cpp in Sources */,
+				737CA0D108F8352A00DAC36C /* AudioCodecComponentGlue.c in Sources */,
+				737C589309125B5900700B79 /* vorbis_entrypoints.cpp in Sources */,
+				737C58A109125C7E00700B79 /* wrap_ogg.cpp in Sources */,
+				737C59960912617B00700B79 /* CAOggVorbisDecoder.cpp in Sources */,
+				734252F60AECFAB8003F78A8 /* CAVorbisEncoder.cpp in Sources */,
+				73C298B30AEFAA7100EF9C25 /* XCACodec.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C167DFE841241C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C167EFE841241C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		737810D108FCC24B00686713 /* Deployment (optimized+) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXPORTED_SYMBOLS_FILE = src/CAVorbisCodec.exp;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS)",
+					"$(HOME)/Library/Frameworks",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CAVorbis_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					__MACOSX__,
+					NDEBUG,
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Components";
+				PRODUCT_NAME = CAVorbis;
+				WRAPPER_EXTENSION = component;
+				ZERO_LINK = NO;
+			};
+			name = "Deployment (optimized+)";
+		};
+		737810D208FCC24B00686713 /* Deployment (optimized+) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_ALTIVEC_EXTENSIONS = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					__MACOSX__,
+					QT_IA32__VBR_BROKEN,
+				);
+				OTHER_REZFLAGS = "$(OTHER_REZFLAGS) -D TARGET_REZ_MAC_PPC=1 -D BUILD_UNIVERSAL";
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = "Deployment (optimized+)";
+		};
+		737C9E9908F7FE4D00DAC36C /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXPORTED_SYMBOLS_FILE = src/CAVorbisCodec.exp;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS)",
+					"$(HOME)/Library/Frameworks",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CAVorbis_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Components";
+				OTHER_CFLAGS = "-Wall";
+				PRODUCT_NAME = CAVorbis;
+				WRAPPER_EXTENSION = component;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		737C9E9A08F7FE4D00DAC36C /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXPORTED_SYMBOLS_FILE = src/CAVorbisCodec.exp;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS)",
+					"$(HOME)/Library/Frameworks",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CAVorbis_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					__MACOSX__,
+					NDEBUG,
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Components";
+				PRODUCT_NAME = CAVorbis;
+				WRAPPER_EXTENSION = component;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		737C9E9D08F7FE4D00DAC36C /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					__MACOSX__,
+					QT_IA32__VBR_BROKEN,
+				);
+				OTHER_REZFLAGS = "$(OTHER_REZFLAGS) -D TARGET_REZ_MAC_PPC=1 -D BUILD_UNIVERSAL";
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Development;
+		};
+		737C9E9E08F7FE4D00DAC36C /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					__MACOSX__,
+					QT_IA32__VBR_BROKEN,
+					NDEBUG,
+				);
+				OTHER_CFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-falign-loops=16",
+					"-ffast-math",
+				);
+				OTHER_REZFLAGS = "$(OTHER_REZFLAGS) -D TARGET_REZ_MAC_PPC=1 -D BUILD_UNIVERSAL";
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Deployment;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		737C9E9808F7FE4D00DAC36C /* Build configuration list for PBXNativeTarget "CAVorbis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				737C9E9908F7FE4D00DAC36C /* Development */,
+				737C9E9A08F7FE4D00DAC36C /* Deployment */,
+				737810D108FCC24B00686713 /* Deployment (optimized+) */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Deployment;
+		};
+		737C9E9C08F7FE4D00DAC36C /* Build configuration list for PBXProject "CAVorbis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				737C9E9D08F7FE4D00DAC36C /* Development */,
+				737C9E9E08F7FE4D00DAC36C /* Deployment */,
+				737810D208FCC24B00686713 /* Deployment (optimized+) */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Deployment;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

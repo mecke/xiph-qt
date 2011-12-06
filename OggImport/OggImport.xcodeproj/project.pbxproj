@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		73182D6A090AAEA700C25A13 /* OggImport.c in Sources */ = {isa = PBXBuildFile; fileRef = 73182D64090AAEA700C25A13 /* OggImport.c */; };
+		73182D6B090AAEA700C25A13 /* rb.c in Sources */ = {isa = PBXBuildFile; fileRef = 73182D67090AAEA700C25A13 /* rb.c */; };
+		73182D70090AB03900C25A13 /* MetaDataConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73182D6F090AB03900C25A13 /* MetaDataConfig.plist */; };
+		73182D73090AB07400C25A13 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73182D71090AB07400C25A13 /* CoreFoundation.framework */; };
+		73182D74090AB07400C25A13 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73182D72090AB07400C25A13 /* QuickTime.framework */; };
+		73182D76090AB09000C25A13 /* Ogg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73182D75090AB09000C25A13 /* Ogg.framework */; };
+		73182D82090AB53500C25A13 /* OggImport.r in Rez */ = {isa = PBXBuildFile; fileRef = 73182D6E090AAEC800C25A13 /* OggImport.r */; };
+		73182D90090AB6D500C25A13 /* PkgInfo in CopyFiles */ = {isa = PBXBuildFile; fileRef = 73182D8C090AB6B000C25A13 /* PkgInfo */; };
+		73182D9B090AB7F800C25A13 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 73182D62090AAEA700C25A13 /* common.c */; };
+		73182D9F090AB83F00C25A13 /* Vorbis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73182D9E090AB83F00C25A13 /* Vorbis.framework */; };
+		73182E37090AD49700C25A13 /* stream_vorbis.c in Sources */ = {isa = PBXBuildFile; fileRef = 73182E35090AD49700C25A13 /* stream_vorbis.c */; };
+		7321B3690A022B20004A699F /* TheoraExp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7321B3680A022B20004A699F /* TheoraExp.framework */; };
+		7321B3990A03BC0A004A699F /* utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 7321B3970A03BC0A004A699F /* utils.c */; };
+		73A515E509844E1D0018101A /* stream_flac.c in Sources */ = {isa = PBXBuildFile; fileRef = 73A515E209844E1D0018101A /* stream_flac.c */; };
+		73BED3E709D77E8500ACC195 /* stream_theora.c in Sources */ = {isa = PBXBuildFile; fileRef = 73BED3E409D77E8500ACC195 /* stream_theora.c */; };
+		73E8B16D090BE13600686EE5 /* stream_speex.c in Sources */ = {isa = PBXBuildFile; fileRef = 73E8B16A090BE13600686EE5 /* stream_speex.c */; };
+		8D01CCCA0486CAD60068D4B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+		8D01CCCE0486CAD60068D4B7 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		73182D8E090AB6BE00C25A13 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents;
+			dstSubfolderSpec = 1;
+			files = (
+				73182D90090AB6D500C25A13 /* PkgInfo in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		32BAE0B30371A71500C91783 /* OggImport_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OggImport_Prefix.pch; sourceTree = "<group>"; };
+		73182D62090AAEA700C25A13 /* common.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = common.c; path = src/common.c; sourceTree = "<group>"; };
+		73182D63090AAEA700C25A13 /* common.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = common.h; path = src/common.h; sourceTree = "<group>"; };
+		73182D64090AAEA700C25A13 /* OggImport.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = OggImport.c; path = src/OggImport.c; sourceTree = "<group>"; };
+		73182D65090AAEA700C25A13 /* OggImport.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = OggImport.h; path = src/OggImport.h; sourceTree = "<group>"; };
+		73182D66090AAEA700C25A13 /* OggImportDispatch.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = OggImportDispatch.h; path = src/OggImportDispatch.h; sourceTree = "<group>"; };
+		73182D67090AAEA700C25A13 /* rb.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = rb.c; path = src/rb.c; sourceTree = "<group>"; };
+		73182D68090AAEA700C25A13 /* rb.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = rb.h; path = src/rb.h; sourceTree = "<group>"; };
+		73182D6E090AAEC800C25A13 /* OggImport.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; name = OggImport.r; path = src/OggImport.r; sourceTree = "<group>"; };
+		73182D6F090AB03900C25A13 /* MetaDataConfig.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; path = MetaDataConfig.plist; sourceTree = "<group>"; };
+		73182D71090AB07400C25A13 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
+		73182D72090AB07400C25A13 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = /System/Library/Frameworks/QuickTime.framework; sourceTree = "<absolute>"; };
+		73182D75090AB09000C25A13 /* Ogg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ogg.framework; path = /Library/Frameworks/Ogg.framework; sourceTree = "<absolute>"; };
+		73182D79090AB4CE00C25A13 /* OggImport.exp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.exports; name = OggImport.exp; path = src/OggImport.exp; sourceTree = "<group>"; };
+		73182D7A090AB4CE00C25A13 /* versions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = versions.h; path = src/versions.h; sourceTree = "<group>"; };
+		73182D8C090AB6B000C25A13 /* PkgInfo */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = PkgInfo; sourceTree = "<group>"; };
+		73182D9E090AB83F00C25A13 /* Vorbis.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Vorbis.framework; path = /Library/Frameworks/Vorbis.framework; sourceTree = "<absolute>"; };
+		73182DEC090AC8E900C25A13 /* debug.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = debug.h; path = ../utils/debug.h; sourceTree = SOURCE_ROOT; };
+		73182DF1090ACA0D00C25A13 /* importer_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = importer_types.h; path = src/importer_types.h; sourceTree = "<group>"; };
+		73182E34090AD49700C25A13 /* stream_vorbis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stream_vorbis.h; path = src/stream_vorbis.h; sourceTree = "<group>"; };
+		73182E35090AD49700C25A13 /* stream_vorbis.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = stream_vorbis.c; path = src/stream_vorbis.c; sourceTree = "<group>"; };
+		73182E4C090AE29000C25A13 /* stream_types_vorbis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stream_types_vorbis.h; path = src/stream_types_vorbis.h; sourceTree = "<group>"; };
+		7321B3680A022B20004A699F /* TheoraExp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TheoraExp.framework; path = /Library/Frameworks/TheoraExp.framework; sourceTree = "<absolute>"; };
+		7321B3970A03BC0A004A699F /* utils.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = utils.c; path = src/utils.c; sourceTree = "<group>"; };
+		7321B3980A03BC0A004A699F /* utils.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = utils.h; path = src/utils.h; sourceTree = "<group>"; };
+		737C5A6D0912A05200700B79 /* fccs.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = fccs.h; path = ../common/fccs.h; sourceTree = SOURCE_ROOT; };
+		738602C50915732900CB8105 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = icon.icns; path = ../resources/icon.icns; sourceTree = SOURCE_ROOT; };
+		738602C60915732900CB8105 /* icon.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; name = icon.r; path = ../resources/icon.r; sourceTree = SOURCE_ROOT; };
+		73A515E209844E1D0018101A /* stream_flac.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = stream_flac.c; path = src/stream_flac.c; sourceTree = "<group>"; };
+		73A515E309844E1D0018101A /* stream_flac.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = stream_flac.h; path = src/stream_flac.h; sourceTree = "<group>"; };
+		73A515E409844E1D0018101A /* stream_types_flac.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = stream_types_flac.h; path = src/stream_types_flac.h; sourceTree = "<group>"; };
+		73BED3E409D77E8500ACC195 /* stream_theora.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = stream_theora.c; path = src/stream_theora.c; sourceTree = "<group>"; };
+		73BED3E509D77E8500ACC195 /* stream_theora.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = stream_theora.h; path = src/stream_theora.h; sourceTree = "<group>"; };
+		73BED3E609D77E8500ACC195 /* stream_types_theora.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = stream_types_theora.h; path = src/stream_types_theora.h; sourceTree = "<group>"; };
+		73DDD2B2093E665C001E170C /* config.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = config.h; path = ../common/config.h; sourceTree = SOURCE_ROOT; };
+		73E8B10F090BCB6100686EE5 /* data_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = data_types.h; path = ../common/data_types.h; sourceTree = SOURCE_ROOT; };
+		73E8B16A090BE13600686EE5 /* stream_speex.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = stream_speex.c; path = src/stream_speex.c; sourceTree = "<group>"; };
+		73E8B16B090BE13600686EE5 /* stream_speex.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = stream_speex.h; path = src/stream_speex.h; sourceTree = "<group>"; };
+		73E8B16C090BE13600686EE5 /* stream_types_speex.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = stream_types_speex.h; path = src/stream_types_speex.h; sourceTree = "<group>"; };
+		8D01CCD10486CAD60068D4B7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D01CCD20486CAD60068D4B7 /* OggImport.component */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OggImport.component; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D01CCCD0486CAD60068D4B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D01CCCE0486CAD60068D4B7 /* Carbon.framework in Frameworks */,
+				73182D73090AB07400C25A13 /* CoreFoundation.framework in Frameworks */,
+				73182D74090AB07400C25A13 /* QuickTime.framework in Frameworks */,
+				73182D76090AB09000C25A13 /* Ogg.framework in Frameworks */,
+				73182D9F090AB83F00C25A13 /* Vorbis.framework in Frameworks */,
+				7321B3690A022B20004A699F /* TheoraExp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* OggImport */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77ADFE841716C02AAC07 /* Source */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* External Frameworks and Libraries */,
+				19C28FB4FE9D528D11CA2CBB /* Products */,
+			);
+			name = OggImport;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				7321B3680A022B20004A699F /* TheoraExp.framework */,
+				73182D9E090AB83F00C25A13 /* Vorbis.framework */,
+				73182D75090AB09000C25A13 /* Ogg.framework */,
+				73182D71090AB07400C25A13 /* CoreFoundation.framework */,
+				73182D72090AB07400C25A13 /* QuickTime.framework */,
+				08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				738602C50915732900CB8105 /* icon.icns */,
+				738602C60915732900CB8105 /* icon.r */,
+				73182D8C090AB6B000C25A13 /* PkgInfo */,
+				73182D6F090AB03900C25A13 /* MetaDataConfig.plist */,
+				73182D6E090AAEC800C25A13 /* OggImport.r */,
+				8D01CCD10486CAD60068D4B7 /* Info.plist */,
+				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77ADFE841716C02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				7321B3970A03BC0A004A699F /* utils.c */,
+				7321B3980A03BC0A004A699F /* utils.h */,
+				73BED3E309D77E6300ACC195 /* theora */,
+				73A515E109844DF70018101A /* flac */,
+				73E8B169090BE11D00686EE5 /* speex */,
+				73E8B162090BDE5D00686EE5 /* vorbis */,
+				73DDD2B2093E665C001E170C /* config.h */,
+				73182DEC090AC8E900C25A13 /* debug.h */,
+				73182D79090AB4CE00C25A13 /* OggImport.exp */,
+				73182D7A090AB4CE00C25A13 /* versions.h */,
+				73182D62090AAEA700C25A13 /* common.c */,
+				73182D63090AAEA700C25A13 /* common.h */,
+				73182D64090AAEA700C25A13 /* OggImport.c */,
+				73182D65090AAEA700C25A13 /* OggImport.h */,
+				73182D66090AAEA700C25A13 /* OggImportDispatch.h */,
+				73182D67090AAEA700C25A13 /* rb.c */,
+				73182D68090AAEA700C25A13 /* rb.h */,
+				32BAE0B30371A71500C91783 /* OggImport_Prefix.pch */,
+				73182DF1090ACA0D00C25A13 /* importer_types.h */,
+				73E8B10F090BCB6100686EE5 /* data_types.h */,
+				737C5A6D0912A05200700B79 /* fccs.h */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		19C28FB4FE9D528D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D01CCD20486CAD60068D4B7 /* OggImport.component */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		73A515E109844DF70018101A /* flac */ = {
+			isa = PBXGroup;
+			children = (
+				73A515E209844E1D0018101A /* stream_flac.c */,
+				73A515E309844E1D0018101A /* stream_flac.h */,
+				73A515E409844E1D0018101A /* stream_types_flac.h */,
+			);
+			name = flac;
+			sourceTree = "<group>";
+		};
+		73BED3E309D77E6300ACC195 /* theora */ = {
+			isa = PBXGroup;
+			children = (
+				73BED3E409D77E8500ACC195 /* stream_theora.c */,
+				73BED3E509D77E8500ACC195 /* stream_theora.h */,
+				73BED3E609D77E8500ACC195 /* stream_types_theora.h */,
+			);
+			name = theora;
+			sourceTree = "<group>";
+		};
+		73E8B162090BDE5D00686EE5 /* vorbis */ = {
+			isa = PBXGroup;
+			children = (
+				73182E4C090AE29000C25A13 /* stream_types_vorbis.h */,
+				73182E34090AD49700C25A13 /* stream_vorbis.h */,
+				73182E35090AD49700C25A13 /* stream_vorbis.c */,
+			);
+			name = vorbis;
+			sourceTree = "<group>";
+		};
+		73E8B169090BE11D00686EE5 /* speex */ = {
+			isa = PBXGroup;
+			children = (
+				73E8B16A090BE13600686EE5 /* stream_speex.c */,
+				73E8B16B090BE13600686EE5 /* stream_speex.h */,
+				73E8B16C090BE13600686EE5 /* stream_types_speex.h */,
+			);
+			name = speex;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D01CCC60486CAD60068D4B7 /* OggImport */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73182D56090AAD7600C25A13 /* Build configuration list for PBXNativeTarget "OggImport" */;
+			buildPhases = (
+				8D01CCC90486CAD60068D4B7 /* Resources */,
+				8D01CCCB0486CAD60068D4B7 /* Sources */,
+				8D01CCCD0486CAD60068D4B7 /* Frameworks */,
+				73182D7E090AB52600C25A13 /* Rez */,
+				73182D8E090AB6BE00C25A13 /* CopyFiles */,
+				738602C30915730E00CB8105 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OggImport;
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = OggImport;
+			productReference = 8D01CCD20486CAD60068D4B7 /* OggImport.component */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 73182D5A090AAD7600C25A13 /* Build configuration list for PBXProject "OggImport" */;
+			hasScannedForEncodings = 1;
+			mainGroup = 089C166AFE841209C02AAC07 /* OggImport */;
+			projectDirPath = "";
+			targets = (
+				8D01CCC60486CAD60068D4B7 /* OggImport */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D01CCC90486CAD60068D4B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D01CCCA0486CAD60068D4B7 /* InfoPlist.strings in Resources */,
+				73182D70090AB03900C25A13 /* MetaDataConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		73182D7E090AB52600C25A13 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73182D82090AB53500C25A13 /* OggImport.r in Rez */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		738602C30915730E00CB8105 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				../resources/icon.r,
+				../resources/icon.icns,
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd ../resources\n${SYSTEM_DEVELOPER_TOOLS}/Rez -o \"${TARGET_BUILD_DIR}/${FULL_PRODUCT_NAME}\"/$'Icon\\x0D' icon.r\n${SYSTEM_DEVELOPER_TOOLS}/SetFile -a CE \"${TARGET_BUILD_DIR}/${FULL_PRODUCT_NAME}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D01CCCB0486CAD60068D4B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73182D6A090AAEA700C25A13 /* OggImport.c in Sources */,
+				73182D6B090AAEA700C25A13 /* rb.c in Sources */,
+				73182D9B090AB7F800C25A13 /* common.c in Sources */,
+				73182E37090AD49700C25A13 /* stream_vorbis.c in Sources */,
+				73E8B16D090BE13600686EE5 /* stream_speex.c in Sources */,
+				73A515E509844E1D0018101A /* stream_flac.c in Sources */,
+				73BED3E709D77E8500ACC195 /* stream_theora.c in Sources */,
+				7321B3990A03BC0A004A699F /* utils.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C167DFE841241C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C167EFE841241C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		73182D57090AAD7600C25A13 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXPORTED_SYMBOLS_FILE = src/OggImport.exp;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS)",
+					"$(HOME)/Library/Frameworks",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = OggImport_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					__MACOSX__,
+					"TARGET_REZ_CARBON_MACHO=1",
+					TARGET_OS_MAC,
+					TARGET_API_MAC_CARBON,
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/QuickTime";
+				PRODUCT_NAME = OggImport;
+				WRAPPER_EXTENSION = component;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		73182D58090AAD7600C25A13 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				COPY_PHASE_STRIP = YES;
+				EXPORTED_SYMBOLS_FILE = src/OggImport.exp;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS)",
+					"$(HOME)/Library/Frameworks",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = OggImport_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					__MACOSX__,
+					"TARGET_REZ_CARBON_MACHO=1",
+					TARGET_OS_MAC,
+					TARGET_API_MAC_CARBON,
+					NDEBUG,
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/QuickTime";
+				PRODUCT_NAME = OggImport;
+				WRAPPER_EXTENSION = component;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		73182D5B090AAD7600C25A13 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				OTHER_REZFLAGS = "$(OTHER_REZFLAGS) -D TARGET_REZ_MAC_PPC=1 -D BUILD_UNIVERSAL";
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Development;
+		};
+		73182D5C090AAD7600C25A13 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				OTHER_CFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-falign-loops=16",
+					"-ffast-math",
+				);
+				OTHER_REZFLAGS = "$(OTHER_REZFLAGS) -D TARGET_REZ_MAC_PPC=1 -D BUILD_UNIVERSAL";
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Deployment;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		73182D56090AAD7600C25A13 /* Build configuration list for PBXNativeTarget "OggImport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73182D57090AAD7600C25A13 /* Development */,
+				73182D58090AAD7600C25A13 /* Deployment */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Deployment;
+		};
+		73182D5A090AAD7600C25A13 /* Build configuration list for PBXProject "OggImport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73182D5B090AAD7600C25A13 /* Development */,
+				73182D5C090AAD7600C25A13 /* Deployment */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Deployment;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

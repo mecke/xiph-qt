@@ -1,0 +1,497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		732019C008FEDE8B002000DA /* CAFLACDecoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 732019BA08FEDE8B002000DA /* CAFLACDecoder.cpp */; };
+		732019CF08FEDF03002000DA /* CAFLACDecoderPublic.r in Rez */ = {isa = PBXBuildFile; fileRef = 732019C208FEDECB002000DA /* CAFLACDecoderPublic.r */; };
+		732019D108FEDF3A002000DA /* Ogg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 732019D008FEDF3A002000DA /* Ogg.framework */; };
+		732019E208FEDF99002000DA /* ringbuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 732019DF08FEDF99002000DA /* ringbuffer.cpp */; };
+		732019FF08FEDFAD002000DA /* ACBaseCodec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 732019E708FEDFAD002000DA /* ACBaseCodec.cpp */; };
+		73201A0008FEDFAD002000DA /* ACCodec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 732019E908FEDFAD002000DA /* ACCodec.cpp */; };
+		73201A0208FEDFAD002000DA /* GetCodecBundle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 732019EF08FEDFAD002000DA /* GetCodecBundle.cpp */; };
+		73201A0308FEDFAD002000DA /* AudioCodecComponentGlue.c in Sources */ = {isa = PBXBuildFile; fileRef = 732019F108FEDFAD002000DA /* AudioCodecComponentGlue.c */; };
+		73201A0508FEDFAD002000DA /* CABundleLocker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 732019F708FEDFAD002000DA /* CABundleLocker.cpp */; };
+		73201A0608FEDFAD002000DA /* CADebugMacros.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 732019FA08FEDFAD002000DA /* CADebugMacros.cpp */; };
+		73201A0708FEDFAD002000DA /* CAStreamBasicDescription.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 732019FD08FEDFAD002000DA /* CAStreamBasicDescription.cpp */; };
+		73201A0908FEE030002000DA /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73201A0808FEE030002000DA /* AudioUnit.framework */; };
+		73201A3908FEE41B002000DA /* FLAC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73201A3808FEE41B002000DA /* FLAC.framework */; };
+		734EA2400902851800D10866 /* XCACodec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 734EA23E0902851800D10866 /* XCACodec.cpp */; };
+		7350DCD2098BC2F100A5DAB4 /* CAOggFLACDecoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7350DCD0098BC2F100A5DAB4 /* CAOggFLACDecoder.cpp */; };
+		7350DCD8098BC37D00A5DAB4 /* wrap_ogg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7350DCD5098BC37D00A5DAB4 /* wrap_ogg.cpp */; };
+		739A57440901A47600CF57C1 /* FLAC++.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 739A57430901A47600CF57C1 /* FLAC++.framework */; };
+		73A55FD8090008A2009FD166 /* PkgInfo in CopyFiles */ = {isa = PBXBuildFile; fileRef = 73A55FD7090008A2009FD166 /* PkgInfo */; };
+		73AE0E550907D14A0008B8A1 /* flac_entrypoints.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 73AE0E540907D14A0008B8A1 /* flac_entrypoints.cpp */; };
+		8D01CCCA0486CAD60068D4B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+		8D01CCCE0486CAD60068D4B7 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		73A55FDB09000902009FD166 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents;
+			dstSubfolderSpec = 1;
+			files = (
+				73A55FD8090008A2009FD166 /* PkgInfo in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73E597EC09000B7900357BC8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 1;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		32BAE0B30371A71500C91783 /* CAFLAC_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAFLAC_Prefix.pch; sourceTree = "<group>"; };
+		732019B908FEDE8B002000DA /* CAFLACCodec.exp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.exports; name = CAFLACCodec.exp; path = src/CAFLACCodec.exp; sourceTree = "<group>"; };
+		732019BA08FEDE8B002000DA /* CAFLACDecoder.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = CAFLACDecoder.cpp; path = src/CAFLACDecoder.cpp; sourceTree = "<group>"; };
+		732019BB08FEDE8B002000DA /* CAFLACDecoder.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = CAFLACDecoder.h; path = src/CAFLACDecoder.h; sourceTree = "<group>"; };
+		732019BE08FEDE8B002000DA /* flac_versions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = flac_versions.h; path = src/flac_versions.h; sourceTree = "<group>"; };
+		732019C208FEDECB002000DA /* CAFLACDecoderPublic.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; name = CAFLACDecoderPublic.r; path = src/CAFLACDecoderPublic.r; sourceTree = "<group>"; };
+		732019D008FEDF3A002000DA /* Ogg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ogg.framework; path = /Library/Frameworks/Ogg.framework; sourceTree = "<absolute>"; };
+		732019DF08FEDF99002000DA /* ringbuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = ringbuffer.cpp; sourceTree = "<group>"; };
+		732019E008FEDF99002000DA /* ringbuffer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ringbuffer.h; sourceTree = "<group>"; };
+		732019E708FEDFAD002000DA /* ACBaseCodec.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = ACBaseCodec.cpp; sourceTree = "<group>"; };
+		732019E808FEDFAD002000DA /* ACBaseCodec.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ACBaseCodec.h; sourceTree = "<group>"; };
+		732019E908FEDFAD002000DA /* ACCodec.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = ACCodec.cpp; sourceTree = "<group>"; };
+		732019EA08FEDFAD002000DA /* ACCodec.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ACCodec.h; sourceTree = "<group>"; };
+		732019EB08FEDFAD002000DA /* ACCodecDispatch.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ACCodecDispatch.h; sourceTree = "<group>"; };
+		732019EC08FEDFAD002000DA /* ACCodecDispatchTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ACCodecDispatchTypes.h; sourceTree = "<group>"; };
+		732019EE08FEDFAD002000DA /* ACConditionalMacros.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ACConditionalMacros.h; sourceTree = "<group>"; };
+		732019EF08FEDFAD002000DA /* GetCodecBundle.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = GetCodecBundle.cpp; sourceTree = "<group>"; };
+		732019F008FEDFAD002000DA /* GetCodecBundle.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = GetCodecBundle.h; sourceTree = "<group>"; };
+		732019F108FEDFAD002000DA /* AudioCodecComponentGlue.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = AudioCodecComponentGlue.c; sourceTree = "<group>"; };
+		732019F708FEDFAD002000DA /* CABundleLocker.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = CABundleLocker.cpp; sourceTree = "<group>"; };
+		732019F808FEDFAD002000DA /* CABundleLocker.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CABundleLocker.h; sourceTree = "<group>"; };
+		732019F908FEDFAD002000DA /* CAConditionalMacros.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CAConditionalMacros.h; sourceTree = "<group>"; };
+		732019FA08FEDFAD002000DA /* CADebugMacros.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = CADebugMacros.cpp; sourceTree = "<group>"; };
+		732019FB08FEDFAD002000DA /* CADebugMacros.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CADebugMacros.h; sourceTree = "<group>"; };
+		732019FC08FEDFAD002000DA /* CAMath.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CAMath.h; sourceTree = "<group>"; };
+		732019FD08FEDFAD002000DA /* CAStreamBasicDescription.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = CAStreamBasicDescription.cpp; sourceTree = "<group>"; };
+		732019FE08FEDFAD002000DA /* CAStreamBasicDescription.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CAStreamBasicDescription.h; sourceTree = "<group>"; };
+		73201A0808FEE030002000DA /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = /System/Library/Frameworks/AudioUnit.framework; sourceTree = "<absolute>"; };
+		73201A3808FEE41B002000DA /* FLAC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FLAC.framework; path = /Library/Frameworks/FLAC.framework; sourceTree = "<absolute>"; };
+		734EA23D0902851800D10866 /* XCACodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XCACodec.h; path = ../common/XCACodec.h; sourceTree = "<group>"; };
+		734EA23E0902851800D10866 /* XCACodec.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = XCACodec.cpp; path = ../common/XCACodec.cpp; sourceTree = "<group>"; };
+		7350DCB1098BC1EF00A5DAB4 /* XCAResources.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; name = XCAResources.r; path = ../resources/XCAResources.r; sourceTree = SOURCE_ROOT; };
+		7350DCCA098BC29100A5DAB4 /* config.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = config.h; path = ../common/config.h; sourceTree = SOURCE_ROOT; };
+		7350DCCB098BC29100A5DAB4 /* fccs.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = fccs.h; path = ../common/fccs.h; sourceTree = SOURCE_ROOT; };
+		7350DCCE098BC2A700A5DAB4 /* data_types.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = data_types.h; path = ../common/data_types.h; sourceTree = SOURCE_ROOT; };
+		7350DCD0098BC2F100A5DAB4 /* CAOggFLACDecoder.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = CAOggFLACDecoder.cpp; path = src/CAOggFLACDecoder.cpp; sourceTree = "<group>"; };
+		7350DCD1098BC2F100A5DAB4 /* CAOggFLACDecoder.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = CAOggFLACDecoder.h; path = src/CAOggFLACDecoder.h; sourceTree = "<group>"; };
+		7350DCD4098BC37D00A5DAB4 /* debug.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = debug.h; sourceTree = "<group>"; };
+		7350DCD5098BC37D00A5DAB4 /* wrap_ogg.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = wrap_ogg.cpp; sourceTree = "<group>"; };
+		7350DCD6098BC37D00A5DAB4 /* wrap_ogg.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = wrap_ogg.h; sourceTree = "<group>"; };
+		739A57430901A47600CF57C1 /* FLAC++.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "FLAC++.framework"; path = "/Library/Frameworks/FLAC++.framework"; sourceTree = "<absolute>"; };
+		73A55FD7090008A2009FD166 /* PkgInfo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PkgInfo; sourceTree = "<group>"; };
+		73AE0E540907D14A0008B8A1 /* flac_entrypoints.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = flac_entrypoints.cpp; path = src/flac_entrypoints.cpp; sourceTree = "<group>"; };
+		73E597F70900114900357BC8 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = icon.icns; path = ../resources/icon.icns; sourceTree = SOURCE_ROOT; };
+		73E597F80900114900357BC8 /* icon.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; name = icon.r; path = ../resources/icon.r; sourceTree = SOURCE_ROOT; };
+		8D01CCD10486CAD60068D4B7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D01CCD20486CAD60068D4B7 /* CAFLAC.component */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CAFLAC.component; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D01CCCD0486CAD60068D4B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D01CCCE0486CAD60068D4B7 /* Carbon.framework in Frameworks */,
+				732019D108FEDF3A002000DA /* Ogg.framework in Frameworks */,
+				73201A0908FEE030002000DA /* AudioUnit.framework in Frameworks */,
+				73201A3908FEE41B002000DA /* FLAC.framework in Frameworks */,
+				739A57440901A47600CF57C1 /* FLAC++.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* CAFLAC */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77ADFE841716C02AAC07 /* Source */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				732019DA08FEDF6D002000DA /* External Source */,
+				089C1671FE841209C02AAC07 /* External Frameworks and Libraries */,
+				19C28FB4FE9D528D11CA2CBB /* Products */,
+			);
+			name = CAFLAC;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				732019D008FEDF3A002000DA /* Ogg.framework */,
+				73201A3808FEE41B002000DA /* FLAC.framework */,
+				739A57430901A47600CF57C1 /* FLAC++.framework */,
+				73201A0808FEE030002000DA /* AudioUnit.framework */,
+				08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7350DCB1098BC1EF00A5DAB4 /* XCAResources.r */,
+				73E597F70900114900357BC8 /* icon.icns */,
+				73E597F80900114900357BC8 /* icon.r */,
+				732019C208FEDECB002000DA /* CAFLACDecoderPublic.r */,
+				8D01CCD10486CAD60068D4B7 /* Info.plist */,
+				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
+				73A55FD7090008A2009FD166 /* PkgInfo */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77ADFE841716C02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				7350DCD0098BC2F100A5DAB4 /* CAOggFLACDecoder.cpp */,
+				7350DCD1098BC2F100A5DAB4 /* CAOggFLACDecoder.h */,
+				7350DCCE098BC2A700A5DAB4 /* data_types.h */,
+				7350DCCA098BC29100A5DAB4 /* config.h */,
+				7350DCCB098BC29100A5DAB4 /* fccs.h */,
+				732019B908FEDE8B002000DA /* CAFLACCodec.exp */,
+				32BAE0B30371A71500C91783 /* CAFLAC_Prefix.pch */,
+				732019BE08FEDE8B002000DA /* flac_versions.h */,
+				732019BB08FEDE8B002000DA /* CAFLACDecoder.h */,
+				732019BA08FEDE8B002000DA /* CAFLACDecoder.cpp */,
+				734EA23D0902851800D10866 /* XCACodec.h */,
+				734EA23E0902851800D10866 /* XCACodec.cpp */,
+				73AE0E540907D14A0008B8A1 /* flac_entrypoints.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		19C28FB4FE9D528D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D01CCD20486CAD60068D4B7 /* CAFLAC.component */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		732019DA08FEDF6D002000DA /* External Source */ = {
+			isa = PBXGroup;
+			children = (
+				732019E308FEDFAD002000DA /* AppleSDK */,
+				732019DC08FEDF99002000DA /* utils */,
+			);
+			name = "External Source";
+			sourceTree = "<group>";
+		};
+		732019DC08FEDF99002000DA /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				7350DCD4098BC37D00A5DAB4 /* debug.h */,
+				7350DCD5098BC37D00A5DAB4 /* wrap_ogg.cpp */,
+				7350DCD6098BC37D00A5DAB4 /* wrap_ogg.h */,
+				732019DF08FEDF99002000DA /* ringbuffer.cpp */,
+				732019E008FEDF99002000DA /* ringbuffer.h */,
+			);
+			name = utils;
+			path = ../utils;
+			sourceTree = SOURCE_ROOT;
+		};
+		732019E308FEDFAD002000DA /* AppleSDK */ = {
+			isa = PBXGroup;
+			children = (
+				732019E408FEDFAD002000DA /* CoreAudio */,
+			);
+			name = AppleSDK;
+			path = ../AppleSDK;
+			sourceTree = SOURCE_ROOT;
+		};
+		732019E408FEDFAD002000DA /* CoreAudio */ = {
+			isa = PBXGroup;
+			children = (
+				732019E508FEDFAD002000DA /* AudioCodecs */,
+				732019F608FEDFAD002000DA /* PublicUtility */,
+			);
+			path = CoreAudio;
+			sourceTree = "<group>";
+		};
+		732019E508FEDFAD002000DA /* AudioCodecs */ = {
+			isa = PBXGroup;
+			children = (
+				732019E608FEDFAD002000DA /* ACPublic */,
+				732019F108FEDFAD002000DA /* AudioCodecComponentGlue.c */,
+			);
+			path = AudioCodecs;
+			sourceTree = "<group>";
+		};
+		732019E608FEDFAD002000DA /* ACPublic */ = {
+			isa = PBXGroup;
+			children = (
+				732019E708FEDFAD002000DA /* ACBaseCodec.cpp */,
+				732019E808FEDFAD002000DA /* ACBaseCodec.h */,
+				732019E908FEDFAD002000DA /* ACCodec.cpp */,
+				732019EA08FEDFAD002000DA /* ACCodec.h */,
+				732019EB08FEDFAD002000DA /* ACCodecDispatch.h */,
+				732019EC08FEDFAD002000DA /* ACCodecDispatchTypes.h */,
+				732019EE08FEDFAD002000DA /* ACConditionalMacros.h */,
+				732019EF08FEDFAD002000DA /* GetCodecBundle.cpp */,
+				732019F008FEDFAD002000DA /* GetCodecBundle.h */,
+			);
+			path = ACPublic;
+			sourceTree = "<group>";
+		};
+		732019F608FEDFAD002000DA /* PublicUtility */ = {
+			isa = PBXGroup;
+			children = (
+				732019F708FEDFAD002000DA /* CABundleLocker.cpp */,
+				732019F808FEDFAD002000DA /* CABundleLocker.h */,
+				732019F908FEDFAD002000DA /* CAConditionalMacros.h */,
+				732019FA08FEDFAD002000DA /* CADebugMacros.cpp */,
+				732019FB08FEDFAD002000DA /* CADebugMacros.h */,
+				732019FC08FEDFAD002000DA /* CAMath.h */,
+				732019FD08FEDFAD002000DA /* CAStreamBasicDescription.cpp */,
+				732019FE08FEDFAD002000DA /* CAStreamBasicDescription.h */,
+			);
+			path = PublicUtility;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D01CCC60486CAD60068D4B7 /* CAFLAC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 739EAEA708FEB331008D8013 /* Build configuration list for PBXNativeTarget "CAFLAC" */;
+			buildPhases = (
+				8D01CCC90486CAD60068D4B7 /* Resources */,
+				73A55FDB09000902009FD166 /* CopyFiles */,
+				8D01CCCB0486CAD60068D4B7 /* Sources */,
+				8D01CCCD0486CAD60068D4B7 /* Frameworks */,
+				732019CD08FEDEF9002000DA /* Rez */,
+				73E597EC09000B7900357BC8 /* CopyFiles */,
+				73E598050900144C00357BC8 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CAFLAC;
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = CAFLAC;
+			productReference = 8D01CCD20486CAD60068D4B7 /* CAFLAC.component */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 739EAEAB08FEB331008D8013 /* Build configuration list for PBXProject "CAFLAC" */;
+			hasScannedForEncodings = 1;
+			mainGroup = 089C166AFE841209C02AAC07 /* CAFLAC */;
+			projectDirPath = "";
+			targets = (
+				8D01CCC60486CAD60068D4B7 /* CAFLAC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D01CCC90486CAD60068D4B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D01CCCA0486CAD60068D4B7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		732019CD08FEDEF9002000DA /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				732019CF08FEDF03002000DA /* CAFLACDecoderPublic.r in Rez */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		73E598050900144C00357BC8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+				../resources/icon.r,
+				../resources/icon.icns,
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd ../resources\n${SYSTEM_DEVELOPER_TOOLS}/Rez -o \"${TARGET_BUILD_DIR}/${FULL_PRODUCT_NAME}\"/$'Icon\\x0D' icon.r\n${SYSTEM_DEVELOPER_TOOLS}/SetFile -a CE \"${TARGET_BUILD_DIR}/${FULL_PRODUCT_NAME}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D01CCCB0486CAD60068D4B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				732019C008FEDE8B002000DA /* CAFLACDecoder.cpp in Sources */,
+				732019E208FEDF99002000DA /* ringbuffer.cpp in Sources */,
+				732019FF08FEDFAD002000DA /* ACBaseCodec.cpp in Sources */,
+				73201A0008FEDFAD002000DA /* ACCodec.cpp in Sources */,
+				73201A0208FEDFAD002000DA /* GetCodecBundle.cpp in Sources */,
+				73201A0308FEDFAD002000DA /* AudioCodecComponentGlue.c in Sources */,
+				73201A0508FEDFAD002000DA /* CABundleLocker.cpp in Sources */,
+				73201A0608FEDFAD002000DA /* CADebugMacros.cpp in Sources */,
+				73201A0708FEDFAD002000DA /* CAStreamBasicDescription.cpp in Sources */,
+				734EA2400902851800D10866 /* XCACodec.cpp in Sources */,
+				73AE0E550907D14A0008B8A1 /* flac_entrypoints.cpp in Sources */,
+				7350DCD2098BC2F100A5DAB4 /* CAOggFLACDecoder.cpp in Sources */,
+				7350DCD8098BC37D00A5DAB4 /* wrap_ogg.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C167DFE841241C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C167EFE841241C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		739EAEA808FEB331008D8013 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXPORTED_SYMBOLS_FILE = src/CAFLACCodec.exp;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS)",
+					"$(HOME)/Library/Frameworks",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CAFLAC_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Components";
+				PRODUCT_NAME = CAFLAC;
+				WRAPPER_EXTENSION = component;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		739EAEA908FEB331008D8013 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXPORTED_SYMBOLS_FILE = src/CAFLACCodec.exp;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS)",
+					"$(HOME)/Library/Frameworks",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CAFLAC_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Components";
+				PRODUCT_NAME = CAFLAC;
+				WRAPPER_EXTENSION = component;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		739EAEAC08FEB331008D8013 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(GCC_PREPROCESSOR_DEFINITIONS)",
+					__MACOSX__,
+					QT_IA32__VBR_BROKEN,
+				);
+				OTHER_REZFLAGS = "$(OTHER_REZFLAGS) -D TARGET_REZ_MAC_PPC=1 -D BUILD_UNIVERSAL";
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Development;
+		};
+		739EAEAD08FEB331008D8013 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(GCC_PREPROCESSOR_DEFINITIONS)",
+					__MACOSX__,
+					QT_IA32__VBR_BROKEN,
+					NDEBUG,
+				);
+				OTHER_CFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-falign-loops=16",
+					"-ffast-math",
+				);
+				OTHER_REZFLAGS = "$(OTHER_REZFLAGS) -D TARGET_REZ_MAC_PPC=1 -D BUILD_UNIVERSAL";
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Deployment;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		739EAEA708FEB331008D8013 /* Build configuration list for PBXNativeTarget "CAFLAC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				739EAEA808FEB331008D8013 /* Development */,
+				739EAEA908FEB331008D8013 /* Deployment */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Deployment;
+		};
+		739EAEAB08FEB331008D8013 /* Build configuration list for PBXProject "CAFLAC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				739EAEAC08FEB331008D8013 /* Development */,
+				739EAEAD08FEB331008D8013 /* Deployment */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Deployment;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

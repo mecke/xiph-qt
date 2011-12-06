@@ -1,0 +1,114 @@
+XiphQT
+======
+
+XiphQT, the Xiph QuickTime Components, is a collection of QuickTime
+and Mac OS X 'plug-ins' providing support for the Xiph.Org Foundation's
+(http://xiph.org/) multimedia compression formats.
+
+
+Building
+========
+
+The XiphQT source code is accompanied by a set of Xcode project files,
+and can be built easily using Xcode GUI or 'xcodebuild' command line
+tool. To build from sources source codes of a number of additional
+libraries need to be placed in the ./external-libs folder (see below).
+
+The latest version of XiphQT makes use of the following libraries:
+ogg, vorbis, flac, speex, theora and theora-exp. Their source code can
+be found on http://xiph.org/ .
+
+To build using Xcode's xcodebuild command-line tool type with the
+./build-macosx as the current working directory:
+
+    > xcodebuild -target XiphQT -configuration Release
+
+That should produce statically linked XiphQT.component bundle in the
+./build-macosx/build/Release directory.
+
+To only build decoder and importer components use type:
+
+    > xcodebuild -target 'XiphQT (decoders)' -configuration Release
+
+
+Installing
+==========
+
+The binary component bundle needs to be installed in
+~/Library/Components (or /Library/Components for system-wide
+installation). Create the folder if it doesn't exist.
+
+
+Source code organisation
+========================
+
+./AppleSDK
+	contains selected files from the CoreAudio SDK; these files are the
+	base of the AudioCodec API
+
+./CAFLAC
+	FLAC AudioCodec files
+
+./CASpeex
+	Speex AudioCodec files
+
+./CAVorbis
+	Vorbis AudioCodec files
+
+./OggImport
+	Ogg QuickTime MovieImporter component files
+
+./OggExport
+	Ogg QuickTime Movie Data Export component files
+
+./Theora
+        Theora QuickTime ImageCodec component files
+
+./common, ./utils and ./resources
+	Functions, definition and resources shared between several components
+
+./external-libs
+        Source code of the external libraries should be placed here in
+        the corresponding subfolders: ogg, speex, theora, vorbis, flac
+        (using SVN repository all libraries except flac can be pulled
+        automatically)
+
+./build-macosx
+        Xcode project files, for building for Mac OS X
+
+./build-win32
+        Win32 build files
+
+
+Copying
+=======
+
+    XiphQT is free software; you can redistribute it and/or
+    modify it under the terms of the GNU Lesser General Public
+    License as published by the Free Software Foundation; either
+    version 2.1 of the License, or (at your option) any later version.
+
+    XiphQT is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See file COPYING
+    for the details.
+
+
+    ---
+    The part of the CoreAudio SDK, included under the ./AppleSDK directory,
+    is redistributed according to the terms specified in the files. See
+    the file headers for more details.
+
+
+    ---
+    Part of the OggImport component source code written by Steve Nicolai
+    is distributed under the terms of BSD-style License. See file
+    COPYING.qtcomponents in the OggImport directory for the details.
+
+
+
+More Information
+================
+
+More information can be found on the project webpages at:
+http://xiph.org/quicktime/
